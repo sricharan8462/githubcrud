@@ -5,12 +5,12 @@ allprojects {
     }
 }
 buildscript {
-    dependencies {
-        classpath("com.google.gms:google-services:4.3.15") // ✅ This is correct
-    }
     repositories {
-        google()
+        google() // Ensure this is present
         mavenCentral()
+    }
+    dependencies {
+        classpath("com.google.gms:google-services:4.4.1") // Add this line
     }
 }
 
